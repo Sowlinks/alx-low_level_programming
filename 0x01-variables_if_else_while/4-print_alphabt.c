@@ -8,14 +8,14 @@
 
 int main(void)
 {
-	char n;
+	char ch;
 
-	n = 'a';
+	ch = 'a';
 
-	while (n != 'q' || 'e')
+	while (ch != 'q' && ch != 'e')
 	{
-	putchar(n);
-		n++;
+	putchar(ch);
+		ch++;
 	}
 
 	putchar('\n');
