@@ -13,9 +13,10 @@ int main(void)
 	n = 0;
 
 	while (n <= 9)
+	
 	{
 
-	putchar('n');
+		putchar(n);
 
 		n++;
 
