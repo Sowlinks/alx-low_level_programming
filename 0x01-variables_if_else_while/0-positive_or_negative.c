@@ -18,13 +18,13 @@ int main(void)
 	{
 		printf("%i is positive\n", n);
 	}
-	elif(n < 0)
+	else if(n < 0)
 	{
 		printf("%i is negative\n", n);
 	}
 	else
 	{
-		print("%i is zero ", n);
+		printf("%i is zero ", n);
 	}
 	return (0);
 }
