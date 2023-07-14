@@ -15,13 +15,13 @@ int main(void)
 	while (n <= 9)
 	{
 
-	printf("%d", n);
+	putchar(n);
 
 		n++;
 
 	}
 
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 
