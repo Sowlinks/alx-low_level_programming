@@ -12,7 +12,7 @@ int main(void)
 
 	char ch = 'a';
 
-	while (n <= 15)
+	while (n <= 9)
 
 	{
 
