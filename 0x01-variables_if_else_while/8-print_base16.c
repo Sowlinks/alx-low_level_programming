@@ -10,6 +10,8 @@ int main(void)
 {
 	int n = 0;
 
+	char ch = 'a';
+
 	while (n <= 15)
 
 	{
@@ -17,6 +19,15 @@ int main(void)
 		putchar('0' + n);
 
 		n++;
+
+	}
+
+	while (ch <= 'f')
+
+	{
+		putchar(ch);
+
+		ch++;
 
 	}
 
