@@ -18,6 +18,8 @@ int main(void)
 
 		putchar('0' + second);
 
+		first++;
+
 		second++;
 
 		if (first < 100)
@@ -31,11 +33,9 @@ int main(void)
 		}
 
 
-		first++;
-
 	}
 
-	putchar('n');
+	putchar('\n');
 
 	return (0);
 }
