@@ -10,13 +10,9 @@ int main(void)
 {
 	int first = 0;
 
-	int second = 1;
-
 	while (first < 10)
 	{
 		putchar(first);
-
-		putchar(second);
 
 		putchar(',');
 
@@ -24,7 +20,6 @@ int main(void)
 
 		first++;
 
-		second++;
 	}
 
 	return (0);
