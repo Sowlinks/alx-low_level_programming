@@ -8,21 +8,23 @@
  */
 int main(void)
 {
-	int i = 0;
+	int first = 0;
 
-	int j = 1;
+	int second = 1;
 
 	while (i < 10)
 	{
-		putchar(i);
+		putchar(first);
 
-		putchar(j);
+		putchar(second);
 
 		putchar(',');
 
 		putchar(' ');
 
 		i++;
+
+		j++
 	}
 
 	return (0);
