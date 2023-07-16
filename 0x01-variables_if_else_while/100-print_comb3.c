@@ -16,21 +16,21 @@ int main(void)
 	{
 		putchar('0' + first);
 
-		putchar('0' + second);
-
-		first++;
-
-		second++;
-
 		if (first < 100)
 
 		{
+
+			putchar('0' + second);
 
 			putchar (',');
 
 			putchar (' ');
 
 		}
+
+		first++;
+
+		second++;
 
 
 	}
