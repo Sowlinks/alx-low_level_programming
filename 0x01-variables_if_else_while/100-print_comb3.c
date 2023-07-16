@@ -16,6 +16,8 @@ int main(void)
 	{
 		putchar('0' + first);
 
+		second++;
+
 		if (first < 100)
 
 		{
@@ -25,8 +27,6 @@ int main(void)
 			putchar (',');
 
 			putchar (' ');
-
-			second++;
 
 		}
 
