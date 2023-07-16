@@ -12,7 +12,7 @@ int main(void)
 
 	int second = 1;
 
-	while (i < 10)
+	while (first < 10)
 	{
 		putchar(first);
 
@@ -22,9 +22,9 @@ int main(void)
 
 		putchar(' ');
 
-		i++;
+		first++;
 
-		j++
+		second++
 	}
 
 	return (0);
