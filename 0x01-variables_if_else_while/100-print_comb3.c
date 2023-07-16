@@ -8,29 +8,27 @@
 
 int main(void)
 {
-	int first = 0;
 
-	int second = 0;
+	int first, second;
 
-	while (first < 10)
+	for (first = 0; first  < 10; first++)
 	{
-		putchar('0' + first);
-
-		if (first < 10)
-
+		for (second = first + 1; second < 10; second++)
 		{
+			putchar('0' + first);
 
 			putchar('0' + second);
 
-			putchar (',');
+			if (first < 8 || second < 9)
 
-			putchar (' ');
+			{
 
-			second++;
+				putchar (',');
+
+				putchar (' ');
+			}
 
 		}
-
-		first++;
 
 	}
 
