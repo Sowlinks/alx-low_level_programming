@@ -12,20 +12,27 @@ int main(void)
 
 	int second = 0;
 
-	while (first < 10)
+	while (first < 100)
 	{
 		putchar('0' + first);
 
 		putchar('0' + second);
 
+		if (first < 90)
+
+		{
+
+			putchar (',');
+
+			putchar (' ');
+
+		}
+
+
 		first++;
 
 		second++;
 	}
-
-	putchar(',');
-
-	putchar(' ');
 
 	putchar('n');
 
