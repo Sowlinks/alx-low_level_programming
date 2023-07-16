@@ -23,8 +23,9 @@ int main(void)
 
 			putchar(' ');
 
-			first++;
 		}
+
+		first++;
 
 	}
 
