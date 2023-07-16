@@ -12,13 +12,11 @@ int main(void)
 
 	int second = 0;
 
-	while (first < 100)
+	while (first < 10)
 	{
 		putchar('0' + first);
 
-		second++;
-
-		if (first < 100)
+		if (first < 10)
 
 		{
 
@@ -27,6 +25,8 @@ int main(void)
 			putchar (',');
 
 			putchar (' ');
+
+			second++;
 
 		}
 

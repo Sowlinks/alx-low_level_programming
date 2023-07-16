@@ -6,29 +6,33 @@
  *
  * Return: 0
  */
+#include <stdio.h>
 int main(void)
 {
-	int first = 0;
+        int first, second;
 
-	while (first < 10)
-	{
-		putchar('0' + first);
+        for (first = 0; first  < 10; first++)
+        {
+       
+                for (second = first + 1; second < 10; second ++)
+                {
+                    putchar('0' + first);
 
-		if (first < 9)
+                    putchar('0' + second);
 
-		{
-			putchar(',');
+		    if (first < 8 || second < 9)
 
-			putchar(' ');
+		    {
+                    	putchar (',');
 
+                    	putchar (' ');
+		    }
 
-		}
+                }
 
-		first++;
+        }
+ 
+        putchar('\n');
 
-	}
-
-	putchar('\n');
-
-	return (0);
+        return (0);
 }
