@@ -26,12 +26,11 @@ int main(void)
 
 			putchar (' ');
 
+			second++;
+
 		}
 
 		first++;
-
-		second++;
-
 
 	}
 
