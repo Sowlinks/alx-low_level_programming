@@ -18,7 +18,9 @@ int main(void)
 
 		putchar('0' + second);
 
-		if (first < 90)
+		second++;
+
+		if (first < 100)
 
 		{
 
@@ -31,7 +33,6 @@ int main(void)
 
 		first++;
 
-		second++;
 	}
 
 	putchar('n');
