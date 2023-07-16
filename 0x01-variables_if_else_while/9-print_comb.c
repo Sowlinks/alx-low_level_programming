@@ -1,38 +1,34 @@
 #include <stdio.h>
 
 /**
- * main - to be done later
- * Descriptipn: file to be edited later
+ * main - combo of single digit numbers
+ * Descriptipn: prints all single digit numbers
  *
  * Return: 0
  */
 #include <stdio.h>
 int main(void)
 {
-        int first, second;
+	int first = 0;
 
-        for (first = 0; first  < 10; first++)
-        {
-       
-                for (second = first + 1; second < 10; second ++)
-                {
-                    putchar('0' + first);
+	while (first < 10)
+	{
 
-                    putchar('0' + second);
+		putchar('0' + first);
 
-		    if (first < 8 || second < 9)
+		if (first < 9)
 
-		    {
-                    	putchar (',');
+		{
+			putchar(',');
 
-                    	putchar (' ');
-		    }
+			putchar(' ');
 
-                }
+			first++;
+		}
 
-        }
- 
-        putchar('\n');
+	}
 
-        return (0);
+	putchar('\n');
+
+	return (0);
 }
