@@ -14,9 +14,13 @@ int main(void)
 	{
 		putchar('0' + first);
 
-		putchar(',');
+		if (first < 9)
 
-		putchar(' ');
+		{
+			putchar(',');
+
+			putchar(' ');
+		}
 
 		first++;
 
