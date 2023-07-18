@@ -6,9 +6,9 @@
  *Return: 0
  */
 
-void print_alphabetx10(void)
+void print_alphabet_x10(void)
 {
-	int ch, n;
+	char ch, n;
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
