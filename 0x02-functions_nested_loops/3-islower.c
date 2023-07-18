@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- *islower- a function to check for lower case
+ *_islower- a function to check for lower case
  *@c: checks for case of alphabet
  *Return: 0
  */
 
-int _islower(int c);
+int _islower(int c)
 
 {
-	if (ch >= 'a' && ch <= 'z';
+	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
 	}
