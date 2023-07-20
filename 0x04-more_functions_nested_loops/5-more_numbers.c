@@ -15,6 +15,10 @@ void print_numbers(void)
 	{
 		for (n = 0; n < 14; n++)
 		{
+			if (m > 10)
+			{
+				_putchar((m / 10) + '0');
+			}
 			_putchar(n + '0');
 		}
 		_putchar('\n');
