@@ -5,7 +5,7 @@
  * Description: a function that checks if a character is in uppercae
  * Return: 0
  */
-int isupper(int c)
+int _isupper(int c)
 {
 	if ((c >= 'A') && (c <= 'Z'))
 	{
