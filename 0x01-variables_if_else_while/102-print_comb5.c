@@ -8,34 +8,32 @@
 
 int main(void)
 {
-	int first, second, third, fourth;
+int first, second, third, fourth;
 
-		for (first = 0; first < 10; first++)
+	for (first = 0; first < 10; first++)
+	{
+		for (second = 0; second < 10; second++)
 		{
-			for (second = 0; second < 10; second++)
+			for (third = 0; third  < 10; third++)
 			{
-				for (third = 0; third  < 10; third++)
+				for (fourth = 1; fourth < 10; fourth++)
 				{
-					for (fourth = 1; fourth < 10; fourth++)
+					if (fourth == third == second == first && first == 0)
 					{
-						if (fourth == third == second == first && first == 0)
-						{
-							continue;
-						}
-						putchar('0' + first);
-						putchar('0' + second);
-						putchar(' ');
-						putchar('0' + third);
-						putchar('0' + fourth);
-						putchar(',');
-						putchar(' ');
+						continue;
 					}
+					putchar('0' + first);
+					putchar('0' + second);
+					putchar(' ');
+					putchar('0' + third);
+					putchar('0' + fourth);
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
+	}
 
-
-	putchar('\n');
-
-	return (0);
+putchar('\n');
+return (0);
 }
