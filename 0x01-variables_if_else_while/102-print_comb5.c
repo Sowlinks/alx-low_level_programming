@@ -8,31 +8,26 @@
 
 int main(void)
 {
+	int first, second, third, fourth;
 
-	int first, second;
-
-	for (first = 0; first  < 10; first++)
-	{
-		for (second = first + 1; second < 10; second++)
+		for (first = 0; first < 10; first++)
 		{
-			putchar('0' + first);
-
-			putchar(' ');
-
-			putchar('0' + second);
-
-			if (first < 8 || second < 9)
-
+			for (second = 0; second < 10; second++)
 			{
-
-				putchar (',');
-
-				putchar (' ');
+				for (third = 0; third  < 10; third++)
+				{
+					for (fourth = first + 1; fourth < 10; fourth++)
+					{
+						putchar('0' + first);
+						putchar('0' + second);
+						putchar(' ');
+						putchar('0' + third);
+						putchar('0' + fourth);
+					}
+				}
 			}
-
 		}
 
-	}
 
 	putchar('\n');
 
