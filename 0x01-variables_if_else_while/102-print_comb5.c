@@ -23,6 +23,8 @@ int main(void)
 						putchar(' ');
 						putchar('0' + third);
 						putchar('0' + fourth);
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
