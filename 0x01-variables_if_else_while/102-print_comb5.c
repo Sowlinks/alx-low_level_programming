@@ -34,6 +34,8 @@ int first, second, third, fourth;
 		}
 	}
 
+
 putchar('\n');
+
 return (0);
 }
