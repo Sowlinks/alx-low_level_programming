@@ -17,7 +17,7 @@ int main(void)
 		{
 			putchar('0' + first);
 
-		 	putchar(' ');
+			putchar(' ');
 
 			putchar('0' + second);
 
@@ -27,7 +27,7 @@ int main(void)
 
 				putchar (',');
 
- 				putchar (' ');
+				putchar (' ');
 			}
 
 		}
