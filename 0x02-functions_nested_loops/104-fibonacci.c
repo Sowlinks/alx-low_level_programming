@@ -14,7 +14,7 @@ int main(void)
 
 	b = 2;
 
-	printf("%lu %lu ", a, b);
+	printf("%lu, %lu", a, b);
 	for (n = 0; n <= 95; n++)
 	{
 		rsum = a + b;
@@ -22,7 +22,7 @@ int main(void)
 		a = b;
 
 		b = rsum;
-		printf("%lu ", rsum);
+		printf(", %lu", rsum);
 	}
 	return (0);
 }
