@@ -16,7 +16,7 @@ int main(void)
 	b = 2;
 
 	printf("%lu, %lu", a, b);
-	for (n = 0; n <= 49; n++)
+	for (n = 0; n <= 47; n++)
 	{
 		rsum = a + b;
 
