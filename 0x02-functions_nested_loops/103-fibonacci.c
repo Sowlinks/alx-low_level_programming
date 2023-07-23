@@ -22,7 +22,7 @@ int main(void)
 		rsum = a + b;
 
 		if (rsum % 2 == 0 && rsum)
-			sum = sum += rsum;
+			sum = sum + rsum;
 
 		a = b;
 
