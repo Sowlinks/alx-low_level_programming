@@ -25,6 +25,6 @@ int main(void)
 
 		b = rsum;
 	}
-	return (0);
 	printf("\n");
+	return (0);
 }
