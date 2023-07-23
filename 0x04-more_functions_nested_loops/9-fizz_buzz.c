@@ -10,7 +10,7 @@ int main(void)
 	int n;
 
 	printf("1");
-	for (n = 1; n < 101; n++)
+	for (n = 2; n < 101; n++)
 	{
 		if (n % 3 == 0)
 			if (n % 5 == 0)
