@@ -15,17 +15,17 @@ void times_table(void)
 		for (n = 0; n < 10; n++)
 		{
 			total = i * n;
-			printf("%d", total);
-			if (n == 9)
-			{
-				continue;
-			}
-			printf(". ");
-			if (total <= 9)
-			{
-				printf(" ");
-			}
+
+			if (n != 0)
+				printf(", ");
+			if (total > 9)
+				printf("%d", total);
+			else if (total  < 10 && n != 0)
+				printf(" %d", total);
+			else
+				printf("%d", total);
+
 		}
 		printf("\n");
-	}
+}
 }
