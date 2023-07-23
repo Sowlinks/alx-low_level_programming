@@ -21,6 +21,10 @@ void times_table(void)
 				continue;
 			}
 			printf(". ");
+			if (total <= 9)
+			{
+				printf(" ");
+			}
 		}
 		printf("\n");
 	}
