@@ -15,10 +15,8 @@ void times_table(void)
 		for (n = 0; n < 10; n++)
 		{
 			total = i * n;
-			printf("%d", total);
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", total);
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 }
