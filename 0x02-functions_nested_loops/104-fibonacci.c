@@ -19,10 +19,11 @@ int main(void)
 	{
 		rsum = a + b;
 
+		printf(", %lu", rsum);
+
 		a = b;
 
 		b = rsum;
-		printf(", %lu", rsum);
 	}
 	printf("\n");
 	return (0);
