@@ -8,19 +8,19 @@
  */
 int main(void)
 {
-	unsigned long long int a, b, rsum;
+	unsigned long a, b, rsum;
 	int n;
 
 	a = 1;
 
 	b = 2;
 
-	printf("%llu, %llu", a, b);
+	printf("%lu, %lu", a, b);
 	for (n = 0; n <= 49; n++)
 	{
 		rsum = a + b;
 
-		printf(", %llu", rsum);
+		printf(", %lu", rsum);
 		a = b;
 
 		b = rsum;
