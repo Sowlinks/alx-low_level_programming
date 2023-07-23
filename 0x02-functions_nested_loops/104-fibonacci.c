@@ -24,5 +24,6 @@ int main(void)
 		b = rsum;
 		printf(", %lu", rsum);
 	}
+	print("\n");
 	return (0);
 }
