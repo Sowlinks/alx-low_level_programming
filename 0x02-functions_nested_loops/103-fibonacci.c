@@ -21,7 +21,7 @@ int main(void)
 	{
 		rsum = a + b;
 
-		if (rsum % 2 == 0 && rsum)
+		if (rsum % 2 == 0 && rsum < 4000000)
 			sum = sum + rsum;
 
 		a = b;
