@@ -9,14 +9,13 @@
 
 void print_rev(char *s)
 {
-	char str[] = "Hello world";
 	int index = 0;
 	int i;
 
-	while (str[index] != '\0')
+	while (s[index] != '\0')
 		index++;
 		for (i = index; i >= 0; i--)
-			printf("%c", str[i]);
-			printf("\n");
+			printf("%c", s[i]);
+	printf("\n");
 
 }
