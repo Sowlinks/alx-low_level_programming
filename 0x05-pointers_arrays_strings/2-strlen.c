@@ -11,6 +11,6 @@ int _strlen(char *s)
 
 	while (s[index] != '\0')
 		index++;
-	printf("%d", index);
+	putchar('0' + index);
 	return (0);
 }
