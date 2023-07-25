@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * print_rev- print string in reverse
+ * rev_string- reverses a string
  * @s: variable s
  * Return reverse string
  */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int index = 0;
 	int i;
@@ -15,7 +15,6 @@ void print_rev(char *s)
 	while (s[index] != '\0')
 		index++;
 	for (i = index - 1; i >= 0; i--)
-		printf("%c", s[i]);
+		s = printf("%c", s[i]);
 	printf("\n");
-
 }
