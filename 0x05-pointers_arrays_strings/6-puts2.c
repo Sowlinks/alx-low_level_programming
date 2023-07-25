@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * void puts2(char *str) - prints every other cahracter
+ * puts2- prints every other cahracter
  * @str: variable str
  * Return: 0
  */
