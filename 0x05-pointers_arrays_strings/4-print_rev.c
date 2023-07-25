@@ -14,8 +14,8 @@ void print_rev(char *s)
 
 	while (s[index] != '\0')
 		index++;
-	for (i = index; i >= 0; i--)
-		printf("%c", s[i-1]);
+	for (i = index - 1; i >= 0; i--)
+		printf("%c", s[i]);
 	printf("\n");
 
 }
