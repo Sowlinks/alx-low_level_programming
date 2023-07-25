@@ -3,9 +3,13 @@
 /**
  * _strlen(char *s)- length of string
  * @s: variable s
- * Return: 0
+ * Return: s
  */
 int _strlen(char *s)
 {
-	printf("%d", len);
+	int index = 0;
+
+	while (s[index] != '\0')
+		index++;
+	return(0);
 }
