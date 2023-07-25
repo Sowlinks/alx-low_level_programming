@@ -12,6 +12,6 @@ void _puts(char *str)
 *	while (str[index] != '\0')
 =	index++;
 */
-		printf("%s", str);
+		printf("%s\n", str);
 
 }
