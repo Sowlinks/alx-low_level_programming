@@ -7,11 +7,5 @@
  */
 void _puts(char *str)
 {
-/**	int index = 0;
-=
-*	while (str[index] != '\0')
-=	index++;
-*/
-		printf("%s\n", str);
-
+	printf("%s\n", str);
 }
