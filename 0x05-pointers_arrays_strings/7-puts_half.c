@@ -11,8 +11,6 @@ void puts_half(char *str)
 	int numb = 0;
 	int i, j, half = 0;
 
-	printf("%s", str);
-	printf("\n");
 	while (str[numb] != '\0')
 	{
 		numb++;
