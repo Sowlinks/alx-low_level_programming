@@ -8,18 +8,19 @@
 
 void puts_half(char *str)
 {
-	int index = 0;
+	int numb = 0;
 	int i, j, half = 0;
 
 	printf("%s", str);
 	printf("\n");
-	while (str[index] != '\0')
-		index++;
-		for (i = 0; i < index; i++)
-			half = index / 2;
-			for (j = half; j < index; j++)
-				if (index & 2 != 0)
-					printf("%c", str[j + 1]);
+	while (str[numb] != '\0')
+		numb++;
+		for (i = 0; i < numb; i++)
+			if (numb % 2 == 0)
+				half = numb / 2;
+			else
+				half = (numb - 1) / 2;
+			for (j = (half - 1); j < numb; j++)
 				printf("%c", str[j]);
 
 	printf("\n");
