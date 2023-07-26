@@ -18,9 +18,9 @@ void puts_half(char *str)
 		half = numb / 2;
 	else
 		half = (numb - 1) / 2;
-	for (j = (half - 1); j < numb; j++)
+	for (i = (half - 1); i < numb; i++)
 	{
-		printf("%c", str[j]);
+		printf("%c", str[i]);
 	}
 	
 	}
