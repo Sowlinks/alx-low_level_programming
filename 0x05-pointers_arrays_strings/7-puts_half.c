@@ -20,7 +20,7 @@ void puts_half(char *str)
 		half = (numb - 1) / 2;
 	for (i = (half - 1); i < numb; i++)
 	{
-		printf("%c", str[i]);
+		printf("%", str[i]);
 	}
 	
 	}
