@@ -14,17 +14,17 @@ void puts_half(char *str)
 	while (str[numb] != '\0')
 	{
 		numb++;
-		for (i = 0; i < numb; i++)
+	for (i = 0; i < numb; i++)
+	{
+		if (numb % 2 == 0)
+			half = numb / 2;
+		else
+			half = (numb - 1) / 2;
+		for (j = (half - 1); j < numb; j++)
 		{
-			if (numb % 2 == 0)
-				half = numb / 2;
-			else
-				half = (numb - 1) / 2;
-			for (j = (half - 1); j < numb; j++)
-			{
-				printf("%c", str[j]);
-			}
+			printf("%c", str[j]);
 		}
+	}
 	}
 
 	printf("\n");
