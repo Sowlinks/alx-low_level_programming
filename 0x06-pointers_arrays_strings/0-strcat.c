@@ -16,10 +16,10 @@ char *_strcat(char *dest, char *src)
 
 	for (n = 0; n < strlen(src); n++)
 	{
-		printf("%c", src[n]);
+		_putchar(src[n]);
 		for (n = 0; n < strlen(dest); n++)
 		{
-			printf("%c", dest[n]);
+			_putchar(dest[n]);
 		}
 	}
 }
