@@ -1,3 +1,3 @@
 #ignore main.c files
 *ain.c
--putchar.c
+_putchar.c
