@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include "_putchar.c"
 
 /**
  * _print_rev_recursion- recursion function
@@ -19,16 +17,4 @@ void _print_rev_recursion(char *s)
 	_print_rev_recursion(s);
 	s--;
 	_putchar(*s);
-}
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-
-int main(void)
-{
-	_print_rev_recursion("\nColton Walker");
-	return (0);
 }
