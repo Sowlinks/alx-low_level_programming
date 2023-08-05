@@ -10,6 +10,6 @@
 
 int main(int argc, char *argv[])
 {
-	_puthcar(argv[0]\n);
+	_putchar(argv[0]\n);
 	return (0);
 }
