@@ -13,11 +13,15 @@ int main(__attribute__((unused)) int argc, char *argv[])
 {
 	int result, numb, new_numb;
 
-	for (numb = 0; numb < argc; numb++)
-		/*new_numb = atoi(argv[numb]);*/
-		/*result += argv[new];*/
+	for (numb = 1; numb < argc; numb++)
+		/*printf("%s\n", argv[numb]);*/
+		new_numb = atoi(argv[numb]);
 
-		printf("%s\n", argv[numb]);
+		printf("%d\n", new_numb);
+		
+	       	/**
+		  * *result += argv[new];
+		 */
 
 	return (0);
 }
