@@ -16,7 +16,6 @@ int main(__attribute__((unused)) int argc, char *argv[])
 
 	if (argc < 3)
 		printf("%s\n", "Error");
-		return (1);
 
 	x = atoi(argv[1]);
 	y = atoi(argv[2]);
