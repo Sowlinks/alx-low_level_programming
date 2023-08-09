@@ -9,15 +9,26 @@
  * Return: always return 0
  */
 
-int main(__attribute__((unused)) int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int result, numb, new_numb;
+	int result = 0, num, i, j, k;
 
-	for (numb = 1; numb != argc; numb++)
+	for (i = 1; i < argc; i++)
 	{
-		new_numb += atoi(argv[numb]);
-		printf("%d\n", new_numb);
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (argv[i][j] > '9' || argv[i][j] < '0')
+			{
+				printf("%s\n", "Error");
+				return (1);
+			}
+		}
 	}
-
+	for (k = 1; k < argc; k++)
+	{
+		num = atoi(argv[k]);
+		result += num;
+	}
+	printf("%d\n", result);
 	return (0);
 }
