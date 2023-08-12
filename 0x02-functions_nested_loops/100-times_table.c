@@ -19,7 +19,7 @@ void print_times_table(int n)
 
 			if (total != 0)
 			{
-				printf(", ");
+				printf(",  ");
 			}
 			if (total > n)
 			{
