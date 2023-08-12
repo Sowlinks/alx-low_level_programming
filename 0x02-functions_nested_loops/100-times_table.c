@@ -29,7 +29,7 @@ void print_times_table(int n)
 			{
 				printf(",   %d", total);
 			}
-			else if (total  < n && total != 0)
+			else if (total  < 100 && total != 0)
 			{
 				printf("  %d", total);
 			}
