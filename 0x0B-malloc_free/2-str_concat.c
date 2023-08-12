@@ -42,7 +42,7 @@ char *str_concat(char *s1, char *s2)
 
 	while (k <= len)
 	{
-		ptr[num1] = s2[j];
+		ptr[num1] = s2[k];
 		k++;
 		num1++;
 	}
