@@ -26,7 +26,7 @@ void times_table(void)
 			}
 			else if (i == 0 && i < 9)
 			{
-				printf("%d, ", total)
+				printf("%d, ", total);
 			}
 			else if (total  < 10 && total != 0)
 			{
@@ -39,5 +39,5 @@ void times_table(void)
 
 		}
 		printf("\n");
-}
+	}
 }
