@@ -18,7 +18,7 @@ int first, second, third, fourth;
 			{
 				for (fourth = 1; fourth < 10; fourth++)
 				{
-					if (((fourth) == (third) == (second) == (first)) && (first == 0))
+					if (((first) == (third) == (second) == (fourth)) && (first == 0))
 					{
 						continue;
 					}
