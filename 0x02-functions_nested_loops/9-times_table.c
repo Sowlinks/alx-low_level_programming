@@ -16,11 +16,11 @@ void times_table(void)
 		{
 			total = i * n;
 
-			if (n != 0)
+			if (total != 0)
 				printf(", ");
 			if (total > 9)
 				printf("%d", total);
-			else if (total  < 10 && n != 0)
+			else if (total  < 10 && total != 0)
 				printf(" %d", total);
 			else
 				printf("%d", total);
