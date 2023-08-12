@@ -11,7 +11,7 @@ void print_times_table(int n)
 {
 	int i, k, total;
 
-	for (i = 0; i < 16; i++)
+	for (i = 0; i < n; i++)
 	{
 		for (k = 0; k < 16; k++)
 		{
