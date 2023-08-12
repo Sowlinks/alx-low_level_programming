@@ -15,7 +15,7 @@ void rev_string(char *s)
 	{
 		index++;
 		for (i = index - 1; i >= 0; i--)
-			printf("%c", s[index]);
+			printf("%c", s[i]);
 	}
 	printf("\n");
 }
