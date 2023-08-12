@@ -24,7 +24,7 @@ void times_table(void)
 			{
 				printf("%d", total);
 			}
-			else if (i == 0 && n > 0 && n < 9)
+			else if (i == 0 && n > 0 && n <= 9)
 			{
 				printf(",  %d", total);
 			}
