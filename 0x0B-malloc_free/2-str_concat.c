@@ -36,15 +36,15 @@ char *str_concat(char *s1, char *s2)
 
 	while (j < num1)
 	{
-		ptr[num1] = s1[num1];
+		ptr[j] = s1[j];
 		j++;
 	}
 
 	while (k <= len)
 	{
-		ptr[num1] = s2[k];
+		ptr[j] = s2[k];
+		j++;
 		k++;
-		num1++;
 	}
 	return (ptr);
 }
