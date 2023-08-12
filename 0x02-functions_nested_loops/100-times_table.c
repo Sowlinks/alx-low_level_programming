@@ -13,7 +13,7 @@ void print_times_table(int n)
 
 	for (i = 0; i < n; i++)
 	{
-		for (k = 0; k < 16; k++)
+		for (k = 0; k < n; k++)
 		{
 			total = i * k;
 
@@ -25,7 +25,7 @@ void print_times_table(int n)
 			{
 				printf("%d", total);
 			}
-			else if (i == 0 && k > 0 && k <= 9)
+			else if (i == 0 && k > 0 && k <= n)
 			{
 				printf(",  %d", total);
 			}
