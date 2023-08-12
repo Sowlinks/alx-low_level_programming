@@ -13,17 +13,21 @@ int main(void)
 	for (n = 2; n < 101; n++)
 	{
 		if (n % 3 == 0)
+		{
 			if (n % 5 == 0)
 				printf(" FizzBuzz");
 			else
 				printf(" Fizz");
+		}
 		else if (n % 5 == 0)
+		{
 			if (n % 3 == 0)
 				printf(" FizzBuzz");
 			else
 				printf(" Buzz");
+		}
 		else
-			printf("%d", n);
+			printf(" %d", n);
 	}
 
 	return (0);
