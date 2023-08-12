@@ -8,7 +8,7 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int n = 0, i = 0, len, j;
+	unsigned int n = 0, i = 0, len, j, k = 0;
 	char *ptr;
 
 	/*checks if strings are empty*/
@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	len = n + i;
-	ptr = malloc(sizeof(char) * (len + 1));
+	ptr = malloc((sizeof(char) * len) + 1);
 
 	/* check if malloc was successful*/
 	if (ptr == NULL)
@@ -36,12 +36,13 @@ char *str_concat(char *s1, char *s2)
 
 	for (j = 0; j < n; j++)
 	{
-		s1[j] = ptr[n];
+		ptr[n] = s1[j];
 	}
 
-	for (j = 0; j < i; j++)
+	while (k <= len)
 	{
 		s2[j] = ptr[n];
+		k++;
 		n++;
 	}
 	ptr[len] = '\0';
