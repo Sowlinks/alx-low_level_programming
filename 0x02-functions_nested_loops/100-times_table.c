@@ -21,7 +21,7 @@ void print_times_table(int n)
 			{
 				printf(", ");
 			}
-			if (total > 9)
+			if (total > n)
 			{
 				printf("%d", total);
 			}
