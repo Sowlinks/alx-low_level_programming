@@ -27,11 +27,11 @@ void print_times_table(int n)
 			}
 			else if (i == 0 && k > 0 && k <= n)
 			{
-				printf(",  %d", total);
+				printf(",   %d", total);
 			}
 			else if (total  < 10 && total != 0)
 			{
-				printf(" %d", total);
+				printf("  %d", total);
 			}
 			else
 			{
