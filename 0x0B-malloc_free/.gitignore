@@ -1,0 +1,3 @@
+#ignore file with .c extensions and a.out
+*.c
+a.out
