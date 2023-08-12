@@ -8,7 +8,7 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int n = 0, i = 0, len, j, k = 0;
+	unsigned int n = 0, i = 0, len, j = 0, k = 0;
 	char *ptr;
 
 	/*checks if strings are empty*/
@@ -34,17 +34,17 @@ char *str_concat(char *s1, char *s2)
 	if (ptr == NULL)
 		return (NULL);
 
-	for (j = 0; j < n; j++)
+	while (j < n)
 	{
-		ptr[n] = s1[j];
+		ptr[n] = s1[n];
+		
 	}
 
 	while (k <= len)
 	{
-		s2[j] = ptr[n];
+		ptr[n] = s2[j];
 		k++;
 		n++;
 	}
-	ptr[len] = '\0';
 	return (ptr);
 }
