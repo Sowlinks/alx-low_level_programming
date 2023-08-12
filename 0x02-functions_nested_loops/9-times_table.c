@@ -20,6 +20,8 @@ void times_table(void)
 				printf(", ");
 			if (total > 9)
 				printf("%d", total);
+			else if (i == 0 && i < 9)
+				printf("%d, ", total)
 			else if (total  < 10 && total != 0)
 				printf(" %d", total);
 			else
