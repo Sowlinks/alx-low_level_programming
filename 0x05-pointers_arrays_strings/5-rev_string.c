@@ -9,7 +9,7 @@
 
 void rev_string(char *s)
 {
-	int index, i;
+	int index, i, temp;
 
 	while (s[index] != '\0')
 	{
@@ -17,5 +17,5 @@ void rev_string(char *s)
 	}
 	for (i = index - 1; i >= 0; i--)
 		printf("%c", s[i]);
-	printf("\n");
+		
 }
