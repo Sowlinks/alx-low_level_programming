@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "dog.h"
 
 /**
@@ -12,5 +13,8 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog *d = {jimmu, 2, "Paul"};
+	if (d != NULL)
+	{
+		struct dog d = {"Jimmy", 2, "Paul"};
+	}
 }
