@@ -1,30 +1,26 @@
+#include <stdio.h>
 #include <stdarg.h>
 
 /**
-* sum_them_all- sums all parameters
-* @n: number of items
-* Description: a function that returns the sum of all its paramaeters
-* Return: return sum
-*/
+ * print_numbers- print numbers
+ * @n: number of items
+ * @separator: that sereates the numbers
+ * Description: a function that returns a set of numbers
+ * Return: return sum
+ */
 
-int sum_them_all(const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	int i, x = 0;
-	va_list args;
+	int i;
+	va_list numbers;
 
-	if (n == 0)
-	{
-		return (0);
-	}
-
-	va_start(args, n);
+	va_start(numbers, n);
 
 	for (i = 0; i < n; i++)
 	{
-		int n = va_arg(args, int);
-
-		x += n;
+		printf("%d ", va_arg(numbers, int));
 	}
-	va_end(args);
-	return (x);
+
+	printf("\n");
+	va_end(numbers);
 }
