@@ -5,9 +5,9 @@
 /**
  * print_numbers- print numbers
  * @n: number of items
- * @separator: that sereates the numbers
+ * @separator: that separates the numbers
  * Description: a function that returns a set of numbers
- * Return: return sum
+ * Return: return numbers
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
