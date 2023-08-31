@@ -38,5 +38,5 @@ int _prime(int n, int x)
 
 int is_prime_number(int n)
 {
-	return (_sqrt(n, 1));
+	return (_prime(n, 1));
 }
