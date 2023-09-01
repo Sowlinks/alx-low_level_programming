@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int i, product = 1;
-	if (argc < 3)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return(1);
@@ -23,4 +23,5 @@ int main(int argc, char *argv[])
 		product *= atoi(argv[i]);
 	}
 	printf("%d\n", product);
+	return (0);
 }
