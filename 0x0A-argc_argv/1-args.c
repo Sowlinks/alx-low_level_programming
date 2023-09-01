@@ -1,4 +1,3 @@
-#include "stdlib.h"
 #include "main.h"
 #include <stdio.h>
 
@@ -10,7 +9,7 @@
  * Return: return number of args
  */
 
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc, char __attribute__((unused)) *argv[])
 {
 	printf("%d\n", argc - 1);
 	return (0);
