@@ -10,7 +10,7 @@
  * Return: return number of args
  */
 
-int main(int __attribute((unused)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 
