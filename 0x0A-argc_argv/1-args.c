@@ -12,5 +12,5 @@
 
 int main(int argc, char *argv[])
 {
-	printf("The arg count is: %d\n", argc);
+	printf("%d\n", argc);
 }
