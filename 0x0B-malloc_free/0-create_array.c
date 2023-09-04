@@ -24,7 +24,7 @@ char *create_array(unsigned int size, char c)
 	}
 
 	/* check if malloc failed*/
-	 if (str == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
