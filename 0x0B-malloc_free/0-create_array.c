@@ -32,7 +32,7 @@ char *create_array(unsigned int size, char c)
 	/*initialize array*/
 	for (i = 0; i < size; i++)
 	{
-		str[i] = 'T';
+		str[i] = T;
 	}
 
 	/*return array*/
