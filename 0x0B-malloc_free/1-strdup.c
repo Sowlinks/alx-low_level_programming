@@ -21,17 +21,17 @@ char *_strdup(char *str)
 	}
 	len = i + 1;
 
-	/*allocate mememory for new string*/
-	newstr = malloc(sizeof(char) * len);
-
 	/* check if str is null*/
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
+	/*allocate mememory for new string*/
+	newstr = malloc(sizeof(char) * len);
+
 	/*make new string point to string*/
-	for (j = 0; j < i; j++)
+	for (j = 0; j <= i; j++)
 	{
 		newstr[j] == str[j];
 	}
