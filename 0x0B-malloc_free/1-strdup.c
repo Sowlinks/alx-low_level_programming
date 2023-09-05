@@ -14,18 +14,17 @@ char *_strdup(char *str)
 	unsigned int i = 0, len = 0, j;
 	char *newstr;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	/*get length of string*/
 	while (str[i] != '\0')
 	{
 		i++;
 	}
 	len = i + 1;
-
-	/* check if str is null*/
-	if (str == NULL)
-	{
-		return (NULL);
-	}
 
 	/*allocate mememory for new string*/
 	newstr = malloc(sizeof(char) * len);
