@@ -30,17 +30,17 @@ char *_strdup(char *str)
 	/*allocate mememory for new string*/
 	newstr = malloc(sizeof(char) * len);
 
+	/*check if malloc was successful*/
+	if (newstr == NULL)
+	{
+		return (NULL);
+	}
+
 	/*make new string point to string*/
 	for (j = 0; j <= i; j++)
 	{
 		newstr[j] = str[j];
 	}
 	newstr[i] = '\0';
-
-	/*check if malloc was successful*/
-	if (newstr == NULL)
-	{
-		return (NULL);
-	}
 	return (newstr);
 }
