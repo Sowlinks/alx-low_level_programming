@@ -33,9 +33,9 @@ char *_strdup(char *str)
 	/*make new string point to string*/
 	for (j = 0; j <= i; j++)
 	{
-		newstr[j] == str[j];
+		newstr[j] = str[j];
 	}
-	newstr[i] == '\0';
+	newstr[i] = '\0';
 
 	/*check if malloc was successful*/
 	if (newstr == NULL)
