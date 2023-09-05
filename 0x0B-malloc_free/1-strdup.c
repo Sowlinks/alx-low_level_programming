@@ -31,11 +31,11 @@ char *_strdup(char *str)
 	}
 
 	/*make new string point to string*/
-	for (j = 0; j < len; j++)
+	for (j = 0; j < i; j++)
 	{
-		newstr[j] == str[i];
+		newstr[i] == str[i];
 	}
-	newstr[len] == '\0';
+	newstr[i] == '\0';
 
 	/*check if malloc was successful*/
 	if (newstr == NULL)
