@@ -1,53 +1,48 @@
 #include "main.h"
-#include "stdlib.h"
-
+#include <stdlib.h>
 /**
- * str_concat- fucntion to allocate memory
- * @s1: string one
- * @s2: sting two
- * Description: a function that concatenates two strings
- * Return: returns a pointer to the concatnated string
+ * alloc_grid - create a matrix using malloc
+ * @width: width of the matrix
+ * @height: height of the matrix
+ *
+ * Return: return a pointer of pointer or null
  */
-
-char *str_concat(char *s1, char *s2)
+int **alloc_grid(int width, int height)
 {
-	unsigned int i = 0, len = 0, j = 0, k, final;
-	char *newstr;
+	int i, j, a, b;
+	int **p;
 
-	if (s1 == NULL)
-	{
-		s1 = "";
-	}
-	if (s2 == NULL)
-		s2 = "";
-	/*get length of string*/
-	while (s1[i] != '\0')
-	{
-		i++;
-	}
-	while (s2[j] != '\0')
-	{
-		j++;
-	}
-	len = i + j + 1;
-
-	newstr = malloc(sizeof(char) * len);
-	/*check if malloc was successful*/
-	if (newstr == NULL)
+	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
-
-	for (k = 0; k <= i; k++)
+	else
 	{
-		newstr[k] = s1[k];
+		p = (int **) malloc(height * sizeof(int *));
+		/* we have to make a malloc per pointer*/
+		if (!p)
+		{
+			free(p);
+			return (NULL);
+		}
+		for (i = 0; i < height; i++)
+		{
+			p[i] = (int *) malloc(width * sizeof(int));
+			if (!p[i])
+			{
+				for (j = 0; j <= i; j++)
+					free(p[j]);
+				free(p);
+				return (NULL);
+			}
+		}
+		for (a = 0; a < height; a++)
+		{
+			for (b = 0; b < width; b++)
+			{
+				p[a][b] = 0;
+			}
+		}
+		return (p);
 	}
-	final = 0;
-
-	for (k = i; k < len; k++)
-	{
-		newstr[k] = s2[final];
-		final++;
-	}
-	return (newstr);
 }
