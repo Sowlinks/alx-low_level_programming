@@ -11,7 +11,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int index, i;
+	unsigned int index;
 	void *memb;
 	char *sample;
 
@@ -19,8 +19,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-
-	i = nmemb * size;
 
 	memb = malloc(nmemb * size);
 
