@@ -11,7 +11,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int index = 0;
+	unsigned int index = 0, i;
 	void *memb;
 	char *sample;
 
@@ -21,6 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 
 	memb = malloc(nmemb * size);
+	i = nmemb * size;
 
 	if (memb == NULL)
 	{
@@ -29,7 +30,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	sample = memb;
 
-	while (sample[index] != '\0')
+	while (index < i)
 	{
 		index++;
 	}
