@@ -31,7 +31,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	sample = memb;
 
 	while (sample[index] != '\0')
+	{
 		index++;
+	}
 
 	sample[index] = '\0';
 	return (memb);
