@@ -11,7 +11,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int index = 0, i;
+	unsigned int index, i;
 	void *memb;
 	char *sample;
 
@@ -30,11 +30,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	sample = memb;
 
-	while (index < i)
-	{
-		index++;
-	}
+	for (index = 0; index < i; index++)
+		sample[index] = '\0';
 
-	sample[index] = '\0';
 	return (memb);
 }
