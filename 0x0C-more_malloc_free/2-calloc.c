@@ -24,7 +24,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	memb = malloc(nmemb * size);
 
 	if (memb == NULL)
+	{
 		return (NULL);
+	}
+
 	sample = memb;
 
 	while (sample[index] != '\0')
