@@ -1,4 +1,3 @@
-#include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
 
@@ -7,27 +6,27 @@
  * @separator: the string to be passed between numbers
  * @n: number of integers passed to the function
  * @...: all other args
- * Description: a function that returns the sum of all its parameters.
- * Return: returns num
+ * Description: a function that prints strings, followed by a new line.
+ * Return: returns strings
 */
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
 	unsigned int i;
-	char *num;
+	char *str;
 
 	va_start(args, n);
 
 	for (i = 0; i < n; i++)
 	{
-		num = va_arg(args, char *);
+		str = va_arg(args, char *);
 
-		if (num == NULL)
+		if (str == NULL)
 		{
-			num = "(nil)";
+			str = "(nil)";
 		}
-		printf("%s", num);
+		printf("%s", str);
 
 		if (i < n - 1 && separator != NULL)
 		{
