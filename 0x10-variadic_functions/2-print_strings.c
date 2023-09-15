@@ -1,6 +1,6 @@
-#include "variadic_functions.h"
-#include <stdarg.h>
 #include <stdio.h>
+#include <stdarg.h>
+#include <stdlib.h>
 
 /**
  * print_strings - sums all args
