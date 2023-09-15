@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include "variadic_functions.h"
 #include <stdarg.h>
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * print_strings - sums all args
@@ -9,31 +9,32 @@
  * @...: all other args
  * Description: a function that prints strings, followed by a new line.
  * Return: returns strings
-*/
+ */
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
-	char *s;
-	va_list strings;
+	char *str;
+	va_list args;
 
-	if (separator == NULL)
-		separator = "";
-
-	va_start(strings, n);
+	va_start(args, n);
 
 	for (i = 0; i < n; i++)
 	{
-		s = va_arg(strings, char *);
+		str = va_arg(args, char *);
 
-		if (s == NULL)
-			s = "(nil)";
-		printf("%s", s);
-		if (i < n - 1)
+		if (str == NULL)
+		{
+			str = "(nil)";
+		}
+		printf("%s", str);
+
+		if (i < n - 1 && separator != NULL)
 		{
 			printf("%s", separator);
 		}
 	}
 	printf("\n");
-	va_end(strings);
+
+	va_end(args);
 }
